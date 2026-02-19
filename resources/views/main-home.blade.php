@@ -19,7 +19,7 @@
     />
 </head>
 
-<body class="pb-24"> 
+<body class="pb-24">
     {{-- header section --}}
     <header class="bg-purple-200 w-full justify-between flex p-4">
         <div class="h-full justify-center items-center flex">
@@ -31,20 +31,20 @@
     </header>
     {{-- end of header section  --}}
 
-   {{-- main content --}}
+    {{-- main content --}}
     <section>
         <div class="w-full h-44 bg-purple-200 -mt-3 rounded-b-3xl ">
 
             {{-- profile content --}}
             <div class="w-full flex p-5 gap-3">
                 <div>
-                    <img src="{{ asset('assets/images/default-men.png') }}" 
-                         class="w-20 h-20 rounded-full object-cover border-3 border-purple-950">
+                    <img src="{{ asset('assets/images/default-men.png') }}"
+                        class="w-20 h-20 rounded-full object-cover border-3 border-purple-950">
                 </div>
 
                 <div class="h-full justify-center  mt-3">
-                    <h1 class="font-bold">TEGAR SIMATUPANG</h1>
-                    <span>IPSRS</span>
+                    <h1 class="font-bold">R</h1>
+                    <span>admin</span>
                 </div>
             </div>
 
@@ -75,15 +75,15 @@
                 </div>
 
                 <div class="flex w-full justify-between gap-4 rounded-2xl h-12 items-center mt-6">
-                    <div class="flex w-full">
-                        <button class="h-16 bg-green-400 w-full rounded-full flex justify-center items-center gap-2 font-bold">
+                    <div class="flex w-full text-white">
+                        <button class="h-16 shadow-sm bg-green-400 w-full rounded-full  flex justify-center items-center gap-2 font-bold">
                             <i class="ph ph-camera text-3xl"></i>
                             <span>Masuk</span>
                         </button>
                     </div>
 
-                    <div class="flex w-full">
-                        <button class="h-16 bg-red-400 w-full rounded-full flex justify-center items-center gap-2 font-bold">
+                    <div class="flex w-full text-white">
+                        <button class="h-16 shadow-sm bg-red-400 w-full rounded-full  flex justify-center items-center gap-2 font-bold">
                             <i class="ph ph-camera text-3xl"></i>
                             <span>Pulang</span>
                         </button>
@@ -91,11 +91,11 @@
                 </div>
             </div>
 
-           
+
             {{-- diagram content --}}
-    `       <div class="px-5  w-full">
+            <div class="px-5 mt-8  w-full">
                 <div class=" w-full flex justify-center items-center">
-                     <canvas id="presensiChart"></canvas>
+                    <canvas id="presensiChart"></canvas>
                 </div>
             </div>`
 
@@ -122,8 +122,5 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 </html>
