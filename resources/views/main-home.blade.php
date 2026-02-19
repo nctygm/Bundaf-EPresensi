@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <link
       rel="stylesheet"
@@ -20,7 +20,6 @@
 </head>
 
 <body class="pb-24"> 
-
     {{-- header section --}}
     <header class="bg-purple-200 w-full justify-between flex p-4">
         <div class="h-full justify-center items-center flex">
@@ -34,7 +33,7 @@
 
    {{-- main content --}}
     <section>
-        <div class="w-full h-44 bg-purple-200 mt-0 rounded-b-3xl ">
+        <div class="w-full h-44 bg-purple-200 -mt-3 rounded-b-3xl ">
 
             {{-- profile content --}}
             <div class="w-full flex p-5 gap-3">
@@ -43,8 +42,8 @@
                          class="w-20 h-20 rounded-full object-cover border-3 border-purple-950">
                 </div>
 
-                <div class="h-full justify-center items mt-3">
-                    <h1 class="font-bold">Tegar SIMATUPANG</h1>
+                <div class="h-full justify-center  mt-3">
+                    <h1 class="font-bold">TEGAR SIMATUPANG</h1>
                     <span>IPSRS</span>
                 </div>
             </div>
@@ -94,9 +93,9 @@
 
            
             {{-- diagram content --}}
-    `       <div class="px-5 mt-5 w-full">
-                <div class="bg-white p-4 rounded-3xl shadow-sm">
-                    {!! $chart->container() !!}
+    `       <div class="px-5  w-full">
+                <div class=" w-full flex justify-center items-center">
+                     <canvas id="presensiChart"></canvas>
                 </div>
             </div>`
 
@@ -124,10 +123,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net"></script>
-    <script src="{{ $chart->cdn() }}"></script>
-    {{ $chart->script() }}  
-        
+
 
 </body>
 </html>

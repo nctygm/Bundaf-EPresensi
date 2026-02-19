@@ -7,9 +7,9 @@ use App\Charts\PresensiChart;
 
 class MainHomeController extends Controller
 {
-    public function index(PresensiChart $chart)
+    public function index()
     {
-        $data ['chart'] = $chart->build(); 
-        return view('main-home', $data);
+     
+        return view('main-home');
     }
 }
