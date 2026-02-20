@@ -43,8 +43,8 @@
                 </div>
 
                 <div class="h-full justify-center  mt-3">
-                    <h1 class="font-bold">R</h1>
-                    <span>admin</span>
+                    <h1 class="font-bold">Gumilar S Handoko</h1>
+                    <span>Staf IT</span>
                 </div>
             </div>
 

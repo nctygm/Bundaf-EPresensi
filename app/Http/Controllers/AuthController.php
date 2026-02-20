@@ -20,7 +20,7 @@ class AuthController extends Controller
     // $pass = 123;
     // echo Hash::make($pass);
        if(Auth::guard('pegawai')->attempt(['nik'=> $request->nik, 'password'=> $request->password])){
-        echo 'Berhasil Login';
+        return view('main-home');
        }else{
         echo "gagal login";
        }
